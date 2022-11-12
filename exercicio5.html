@@ -1,0 +1,24 @@
+<!--Roberto é reitor da faculdade "São Judas". 
+Ele precisa de um software para calcular a média de um aluno, e verificar se o aluno esta aprovado ou reprovado.
+Quantidade de notas: 4;
+Aprovação: nota maior ou igual a 5;
+Capture o nome do aluno, média e faça um programa que de o resultado!-->
+
+<script>
+
+aluno = prompt("Digite o nome do Aluno:")
+notaUm = Number(prompt("Digite a 1º nota do aluno:"))
+notaDois = Number(prompt("Digite a 1º nota do aluno:"))
+notaTres = Number(prompt("Digite a 1º nota do aluno:"))
+notaQuatro = Number(prompt("Digite a 1º nota do aluno:"))
+
+totalNotas = (notaUm+notaDois+notaTres+notaQuatro)
+media = (totalNotas/4)
+
+if (media <= 6){
+   alert(`Aluno: ${aluno} | Média final: ${media} - REPROVADO!`)
+}else {
+   alert(`Aluno: ${aluno} | Média final: ${media} - APROVADO!`)
+}
+
+</scrip>

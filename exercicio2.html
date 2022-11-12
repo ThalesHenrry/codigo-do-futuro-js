@@ -1,0 +1,22 @@
+<!--joão roberto é dono de um armazem que vende produtos de limpeza
+ele precisa de um programa que solicite os valores do almejante, sabaoEmPo, sabonete
+
+faça um programa que solicite também o nome do cliente
+e no final do programa mostre o valor 
+total da compra (soma dos valores dos produtos almejante, sabaoEmPo, sabonete)
+feita por este cliente
+o valor total é a soma das variáveis listadas acima-->
+
+<script>
+
+nome=prompt(`Olá, qual o seu nome?`)
+alvejante=parseFloat(prompt(`Valor do Alvejante R$`))
+sabaoEmPo=parseFloat(prompt(`Valor do Sabão em Pó R$`))
+sabonete=parseFloat(prompt(`Valor do Sabonete R$`))
+
+total=Number(alvejante+sabaoEmPo+sabonete)
+
+alert(`Olá ${nome}!
+O total de sua compra foi de R$${total}`)
+
+</script>
