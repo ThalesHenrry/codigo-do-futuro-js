@@ -1,0 +1,63 @@
+<!--Biana é uma pessoa muito indecisa
+e precisa juntar dinheiro para conseguir em suas férias viajar
+ela terá algumas opções a escolher com seus respectivos valores
+
+Disney = R$ 15000
+Madrid = R$ 12000
+Maceió = R$ 8000
+Ribeirão preto = R$ 5000
+
+Faça um programa que solicite o nome do usuário
+o valor que o usuário tem para a viagem
+a viagem que o usuário deseja e mostre no final do programa
+se o usuário pode viajar ou se ele não pode.
+Se ele não poder viajar, mostre o quanto falta para o mesmo economizar-->
+
+<script>
+
+nome=prompt('Qual o seu nome?')
+
+valor=Number(prompt("Qual o seu capital para a viagem?"))
+while(valor<=0){
+if(valor <=0){
+alert(`VALOR INVÁLIDO!
+${valor=Number(prompt("Qual o seu capital para a viagem?"))}`)
+} 
+}
+ 
+escolha=prompt(`Qual o seu destino de viajem ${nome}, digite o numero referente!
+		[1] Disney
+		[2] Madrid
+		[3] Maceió
+		[4] Ribeirão Preto`)
+
+sobra=Number()
+
+switch(escolha){
+ case "1":
+	sobra = valor-15000	
+break;
+case "2":
+	sobra = valor-12000	
+break;
+case "3":
+	sobra = valor-8000
+break;
+case "4":
+	sobra = valor-5000	
+break;
+  default:
+	alert("-")
+}
+
+if(sobra<=0){
+ alert(`${nome}, infelizmente você não tem o valor para a viagem.
+Falta ${sobra.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}`)
+}else{
+ alert(`Parabéns ${nome}, viagem marcada!
+Com o troco de ${sobra.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}`)
+}
+
+
+
+<\script>
